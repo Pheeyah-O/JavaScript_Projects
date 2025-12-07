@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta chaiset="UTF-8">
+  <meta name="viewpoghtt" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Projects</title>
+</head>
+
+<body>
+  <!-- Simple Calculator Begin-->
+  <div class="m-10 text-center">
+    <h3 class="text-center font-bold text-3xl pb-6">SIMPLE CALULATOR</h3>
+    <div id="showAnswer" class="border border-gray-500 text-right mx-auto w-[40%] h-20 p-4 text-3xl"></div>
+
+    <div class="w-[40%] mx-auto flex gap-3 p-5 bg-gray-500">
+      <button class=" text-center w-[40%] p-5 text-2xl text-[blue]" onclick="clearScreen()">C</button>
+      <button class=" text-center w-[40%] p-5 text-2xl text-[blue]" onclick="numClick('/')">/</button>
+      <button class=" text-center w-[40%] p-5 text-2xl text-[blue]" onclick="numClick('*')">*</button>
+      <button class=" text-center w-[40%] p-5 text-2xl text-[blue]" onclick="backspace()">X</button>
+
+    </div>
+
+    <div class="w-[40%] mx-auto flex gap-3 p-5 bg-gray-500 ">
+      <button class=" text-center w-[40%] p-5 text-2xl text-white" onclick="numClick(1)">1</button>
+      <button class=" text-center w-[40%] text-2xl text-white" onclick="numClick(2)">2</button>
+      <button class=" text-center w-[40%] text-2xl text-white" onclick="numClick(3)">3</button>
+      <button class=" text-center w-[40%] p-5 text-2xl  text-[blue]" onclick="numClick('-')">-</button>
+    </div>
+    <div class="w-[40%] mx-auto flex gap-3 p-5 bg-gray-500">
+      <button class=" text-center w-[40%] p-5 text-2xl text-white" onclick="numClick(4)">4</button>
+      <button class=" text-center w-[40%] text-2xl text-white" onclick="numClick(5)">5</button>
+      <button class=" text-center w-[40%] text-2xl text-white" onclick="numClick(6)">6</button>
+      <button class=" text-center w-[40%] p-5 text-2xl text-[blue]" onclick="numClick('+')">+</button>
+    </div>
+    <div class="w-[40%] mx-auto flex gap-3 p-5 bg-gray-500">
+      <button class=" text-center w-[40%] p-5 text-2xl text-white" onclick="numClick(7)">7</button>
+      <button class=" text-center w-[40%] text-2xl text-white" onclick="numClick(8)">8</button>
+      <button class=" text-center w-[40%] text-2xl text-white" onclick="numClick(9)">9</button>
+      <button class="text-center w-[40%] p-5 text-2xl bg-[blue] text-white" onclick="equalSign('=')">=</button>
+    </div>
+
+
+
+
+
+
+  </div>
+  <!-- Simple Calculator end -->
+
+
+  <!--EVEN/ODD CHECKER-->
+  <div class="mt-20 mb-10 text-center">
+    <h3 class="text-3xl font-bold">EVEN/ODD CHECKER</h3>
+    <div class="mx-auto w-[60%] border-4 rounded border-green-500 h-60">
+      <input type="text" id="numberInput" placeholder="Enter A Number"
+        class="w-[50%] p-3 rounded m-6 bg-gray-500 text-white">
+
+      <p id="showResult" class="text-3xl mb-3 fon"></p>
+
+      <div>
+        <button id="resultBtn" onclick="resultBtn()" class="bg-blue-500 p-3 rounded text-white">CHECK EVEN/ODD
+          NUMBER</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--EVEN/ODD CHECKER END-->
+
+
+
+
+  <script src="app.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>
