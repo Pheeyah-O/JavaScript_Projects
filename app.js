@@ -19,12 +19,12 @@ function backspace() {
 }
 
 function resultBtn() {
-  let numberInput = document.getElementById("numberInput").value;
+  let numberInput = parseInt(document.getElementById("numberInput").value);
   let showResult = document.getElementById("showResult");
 
   if (numberInput % 2 === 0) {
     showResult.textContent = `${numberInput} is an Even Number`;
-  } else if (numberInput % 2 === 1) {
+  } else if (Math.abs(numberInput % 2) === 1) {
     showResult.textContent = `${numberInput} is an Odd Number`;
   } else {
     showResult.textContent = "Enter correct Number";
