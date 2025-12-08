@@ -15,10 +15,10 @@
     <div id="showAnswer" class="border border-gray-500 text-right mx-auto w-[40%] h-20 p-4 text-3xl"></div>
 
     <div class="w-[40%] mx-auto flex gap-3 p-5 bg-gray-500">
-      <button class=" text-center w-[40%] p-5 text-2xl text-[blue]" onclick="clearScreen()">C</button>
+      <button class=" text-center w-[40%] p-5 text-2xl text-[blue]" onclick="backspace()">X</button>
       <button class=" text-center w-[40%] p-5 text-2xl text-[blue]" onclick="numClick('/')">/</button>
       <button class=" text-center w-[40%] p-5 text-2xl text-[blue]" onclick="numClick('*')">*</button>
-      <button class=" text-center w-[40%] p-5 text-2xl text-[blue]" onclick="backspace()">X</button>
+
 
     </div>
 
@@ -38,8 +38,16 @@
       <button class=" text-center w-[40%] p-5 text-2xl text-white" onclick="numClick(7)">7</button>
       <button class=" text-center w-[40%] text-2xl text-white" onclick="numClick(8)">8</button>
       <button class=" text-center w-[40%] text-2xl text-white" onclick="numClick(9)">9</button>
-      <button class="text-center w-[40%] p-5 text-2xl bg-[blue] text-white" onclick="equalSign('=')">=</button>
+      <button class=" text-center w-[40%] p-5 text-2xl text-[blue]" onclick="clearScreen()">C</button>
     </div>
+
+    <div class="w-[40%] mx-auto flex gap-3 p-5 bg-gray-500">
+      <button class=" text-center w-[40%] p-5 text-2xl text-white" onclick="numClick(0)">0</button>
+      <button class=" text-center w-[40%] text-2xl text-white" onclick="numClick('00')">00</button>
+      <button class=" text-center w-[40%] text-2xl text-white" onclick="numClick('.')">.</button>
+      <button class="text-center w-[40%]  p-5 text-2xl bg-[blue] text-white" onclick="equalSign('=')">=</button>
+    </div>
+
 
 
 
